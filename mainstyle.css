@@ -1,0 +1,73 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: #0d2323;
+}
+
+.bg1 {
+  background-color: #0d2323;
+}
+
+.box1 {
+  width: 100%;
+  height: 450px;
+  background-color: transparent;
+  -webkit-box-reflect: below 2px linear-gradient(transparent, transparent, #000f00);
+}
+
+.hg {
+  height: auto;
+}
+
+.wehicle {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  background-image: linear-gradient(to bottom, rgb(82, 159, 159), rgb(12, 56, 56));
+  margin: 0 auto;
+  border-radius: 50%;
+  animation: circle 2s infinite linear;
+}
+@keyframes circle {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.wehicle .point {
+  display: block;
+  width: 23px;
+  height: 23px;
+  position: absolute;
+  z-index: 100;
+  top: -2px;
+  left: 50%;
+  box-shadow: 0 0 10px aqua, 0 0 20px aqua, 0 0 30px aqua, 0 0 40px aqua, 0 0 50px aqua, 0 0 60px aqua, 0 0 70px aqua, 0 0 80px aqua, 0 0 90px aqua, 0 0 100px aqua;
+  transform: translate(-50%);
+  background-color: rgb(19, 227, 227);
+  border-radius: 50%;
+}
+.wehicle::before {
+  width: 50%;
+  height: 100%;
+  content: "";
+  position: absolute;
+  background-color: rgb(13, 55, 55);
+  border-top-right-radius: 200px;
+  border-bottom-right-radius: 200px;
+  top: 0;
+  left: 50%;
+}
+.wehicle::after {
+  width: 90%;
+  height: 90%;
+  content: "";
+  position: absolute;
+  background-color: rgb(7, 30, 30);
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/*# sourceMappingURL=mainstyle.css.map */
